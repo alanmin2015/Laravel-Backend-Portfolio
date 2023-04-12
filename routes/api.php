@@ -37,6 +37,13 @@ Route::get('/entries', function(){
 
 });
 
+Route::get('/topics', function(){
+
+    $topics = Topic::orderBy('created_at')->get();
+    return $topics;
+
+});
+
 Route::get('/projects', function(){
 
     $projects = Project::orderBy('created_at')->get();
