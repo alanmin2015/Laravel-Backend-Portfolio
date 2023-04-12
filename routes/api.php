@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
 use App\Models\Type;
+use App\Models\Entry;
 use App\Models\User;
 use App\Models\Project;
 
@@ -26,6 +27,13 @@ Route::get('/types', function(){
 
     $types = Type::orderBy('title')->get();
     return $types;
+
+});
+
+Route::get('/entries', function(){
+
+    $entries = Entry::orderBy('learned_at')->get();
+    return $entries;
 
 });
 
