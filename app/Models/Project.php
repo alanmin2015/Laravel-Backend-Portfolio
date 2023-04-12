@@ -38,4 +38,8 @@ class Project extends Model
     {
         return 'slug';
     }
+    public function skills()
+{
+    return $this->belongsToMany(Skill::class);
+}
 }
