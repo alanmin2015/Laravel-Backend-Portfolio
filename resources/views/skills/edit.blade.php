@@ -45,7 +45,7 @@
 
     </form>
 
-    <a href="/console/skill/list">Back to Skill List</a>
+    <a href="/console/skills/list">Back to Skill List</a>
 
 </section>
 

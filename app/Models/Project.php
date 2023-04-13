@@ -34,6 +34,7 @@ class Project extends Model
         return $this->belongsTo(USer::class, 'user_id');
     }
     
+    
     public function getRouteKeyName()
     {
         return 'slug';

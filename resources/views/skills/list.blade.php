@@ -14,13 +14,13 @@
             <th></th>
 
         </tr>
-        <?php foreach($skills as $skill): ?>
+        <?php foreach($skills as $skills): ?>
             <tr>
-                <td>{{$skill->title}}</td>
-                <td>{{$skill->level}}</td>
+                <td>{{$skills->title}}</td>
+                <td>{{$skills->level}}</td>
           
-                <td><a href="/console/skills/edit/{{$skill->id}}">Edit</a></td>
-                <td><a href="/console/skills/delete/{{$skill->id}}">Delete</a></td>
+                <td><a href="/console/skills/edit/{{$skills->id}}">Edit</a></td>
+                <td><a href="/console/skills/delete/{{$skills->id}}">Delete</a></td>
             </tr>
         <?php endforeach; ?>
     </table>
