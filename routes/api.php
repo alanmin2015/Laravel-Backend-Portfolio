@@ -7,6 +7,9 @@ use App\Models\Type;
 use App\Models\Entry;
 use App\Models\User;
 use App\Models\Project;
+use App\Models\Topic;
+use App\Models\Education;
+use App\Models\Skill;
 
 /*
 |--------------------------------------------------------------------------
