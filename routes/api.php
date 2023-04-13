@@ -44,6 +44,21 @@ Route::get('/topics', function(){
 
 });
 
+Route::get('/skills', function(){
+
+    $skills = Skill::orderBy('level')->get();
+    return $skills;
+
+});
+
+Route::get('/educations', function(){
+
+    $educations = Education::orderBy('finished_at')->get();
+    return $educations;
+
+});
+
+
 Route::get('/projects', function(){
 
     $projects = Project::orderBy('created_at')->get();
