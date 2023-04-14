@@ -117,7 +117,7 @@ class ProjectsController extends Controller
             Storage::delete($project->image);
         }
         
-        $path = request()->file('image')->store('projects');
+        $path = request()->file('image')->store('projects', 'public');
 
         $project->image = $path;
         $project->save();

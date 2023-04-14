@@ -73,7 +73,7 @@ Route::get('/projects', function(){
 
         if($project['image'])
         {
-            $projects[$key]['image'] = env('APP_URL').'storage/'.$project['image'];
+            $projects[$key]['image'] = env('APP_URL').'storage/app/'.$project['image'];
         }
     }
 
